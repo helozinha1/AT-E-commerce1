@@ -1,0 +1,164 @@
+
+/* Container principal e Card de Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: var(--bege);
+}
+
+.login-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-card h2 {
+    font-size: 2.2rem;
+    color: var(--verde-agua-escuro);
+    margin-bottom: 24px;
+}
+
+/* Grupos de input */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--verde-agua-escuro);
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--verde-agua);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fdf8f1;
+    color: #333;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--azul-claro);
+    box-shadow: 0 0 0 2px rgba(154, 191, 229, 0.4);
+}
+
+/* Ícones nos inputs */
+.input-group label i {
+    margin-right: 8px;
+    color: var(--verde-agua-escuro);
+}
+
+/* Link para "Esqueci minha senha" */
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: var(--verde-agua-escuro);
+    text-decoration: none;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.forgot-password:hover {
+    color: var(--azul-claro);
+}
+
+/* Botão de Login */
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background: var(--verde-agua-escuro);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-login:hover {
+    background-color: #557d7a;
+    transform: translateY(-2px);
+}
+
+/* Link para Registro */
+.register-link {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.btn-register {
+    color: var(--verde-agua-escuro);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.btn-register:hover {
+    color: var(--azul-claro);
+    text-decoration: underline;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: var(--verde-agua);
+    color: var(--verde-agua-escuro);
+    flex-wrap: wrap;
+    
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 40px;
+
+}
+.footer-section h2 {
+    margin-bottom: 16px;
+    color: var(--verde-agua-escuro);
+}
+.footer-section p, .footer-section a {
+    color: var(--verde-agua-escuro);
+    text-decoration: none;
+    line-height: 1.6;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 16px 0;
+    background-color: var(--verde-agua-escuro);
+    color: var(--bege);
+}
+/* Responsividade */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-card h2 {
+        font-size: 1.8rem;
+    }
+}

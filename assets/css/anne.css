@@ -5,10 +5,6 @@
     --verde-agua-escuro: #6b9491;
     --azul-claro: #9abfe5;
     --bege: #fdf8f1;
-    --texto-escuro: #4a4a4a;
-    --texto-claro: #8a8a8a;
-    --borda-card: #e0e0e0;
-    --sombra-leve: rgba(0, 0, 0, 0.08);
 }
 
 *{
@@ -22,51 +18,90 @@ body{
     background-color: var(--bege);
 }
 
-header{
-    background-color: var(--bege);
-    box-shadow: 0 2px 4px var(--sombra-leve);
-    padding: 10px 20px;
+header {
+    background-color: var(--verde-agua);
+    height: 120px;
     display: flex;
-    justify-content: center;
-    width: 100%;
-}
-header img{
-    width: 150px;
-    height: auto;
-    margin-left: -250px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 50px;
 }
 
-.icons-pages a{
+header img {
+    width: 150px;
+    height: auto;
+}
+
+.icons-pages a {
     text-decoration: none;
-    color: var(--verde-escuro);
+    color: var(--verde-agua-escuro);
     font-size: 16px;
     margin: 0 15px;
     transition: 0.3s;
 }
-.icons-pages a:hover{
-    color: var(--azul-escuro);
+
+.icons-pages a:hover {
+    color: var(--azul-claro);
 }
-.icons-pages i{
+
+.icons-pages i {
     margin-right: 8px;
 }
 
-.icons-pages{
+.icons-pages {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: -250px;
 }
 
+/* --- Menu Hambúrguer (Novos Estilos) --- */
 
+#menu-toggle {
+    display: none; /* Esconde o checkbox */
+}
 
+.hamburger {
+    display: none; /* Esconde o ícone por padrão */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--verde-agua-escuro);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 800px) {
+  .icons-pages {
+    display: none;
+    flex-direction: column;
+    background: var(--verde-agua);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  #menu-toggle:checked + .hamburger + .icons-pages {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
 /*Anne - hospedagem*/ 
 
 
 .tittle h1{
     text-align: center;
-    margin-top: 30px;
-    color: var(--verde-escuro);
-    font-size: 25px;
+    margin-top: 60px;
+    color: #6b9491;
+    margin-bottom: 50px;
 }
 .container, .container2{
     width: 80%;
